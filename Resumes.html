@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shiva Kumar | Futuristic Product & AI Resume</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        scroll-behavior:smooth;
+    }
+
+    body{
+        font-family: Inter, Arial, sans-serif;
+        background:#070b14;
+        color:#e8f1ff;
+        overflow-x:hidden;
+    }
+
+    body::before{
+        content:'';
+        position:fixed;
+        inset:0;
+        background:
+            radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 30%),
+            radial-gradient(circle at bottom right, rgba(119,0,255,0.15), transparent 30%);
+        z-index:-2;
+    }
+
+    .grid{
+        position:fixed;
+        inset:0;
+        background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+        background-size:40px 40px;
+        z-index:-1;
+    }
+
+    .container{
+        width:min(1200px, 92%);
+        margin:auto;
+    }
+
+    header{
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+        position:relative;
+    }
+
+    .hero{
+        display:grid;
+        grid-template-columns:1.2fr 0.8fr;
+        gap:40px;
+        align-items:center;
+    }
+
+    .tag{
+        display:inline-block;
+        padding:10px 18px;
+        border:1px solid rgba(255,255,255,0.15);
+        border-radius:999px;
+        margin-bottom:20px;
+        backdrop-filter: blur(10px);
+        color:#8fe8ff;
+        letter-spacing:1px;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:clamp(3rem, 8vw, 6rem);
+        line-height:0.95;
+        margin-bottom:20px;
+        background:linear-gradient(90deg,#ffffff,#7be7ff,#caa6ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+
+    .subtitle{
+        font-size:1.2rem;
+        color:#b8c6dd;
+        line-height:1.8;
+        max-width:700px;
+        margin-bottom:35px;
+    }
+
+    .cta{
+        display:flex;
+        gap:18px;
+        flex-wrap:wrap;
+    }
+
+    .btn{
+        padding:14px 24px;
+        border-radius:14px;
+        text-decoration:none;
+        font-weight:600;
+        transition:0.3s ease;
+    }
+
+    .primary{
+        background:linear-gradient(90deg,#00d9ff,#8a5cff);
+        color:#07111f;
+    }
+
+    .secondary{
+        border:1px solid rgba(255,255,255,0.15);
+        color:#ffffff;
+    }
+
+    .btn:hover{
+        transform:translateY(-3px);
+    }
+
+    .orb{
+        width:340px;
+        height:340px;
+        border-radius:50%;
+        background:radial-gradient(circle at top, #6be8ff, #5b2cff);
+        filter:blur(2px);
+        animation:float 6s ease-in-out infinite;
+        box-shadow:0 0 120px rgba(99,226,255,0.4);
+        justify-self:center;
+    }
+
+    @keyframes float{
+        0%,100%{transform:translateY(0);}
+        50%{transform:translateY(-20px);}
+    }
+
+    section{
+        padding:100px 0;
+    }
+
+    .section-title{
+        font-size:2.2rem;
+        margin-bottom:40px;
+        color:#8fe8ff;
+    }
+
+    .glass{
+        background:rgba(255,255,255,0.04);
+        border:1px solid rgba(255,255,255,0.08);
+        border-radius:24px;
+        padding:28px;
+        backdrop-filter: blur(12px);
+    }
+
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+        gap:24px;
+    }
+
+    .card h3{
+        margin-bottom:14px;
+        font-size:1.2rem;
+    }
+
+    .card p{
+        color:#b8c6dd;
+        line-height:1.7;
+    }
+
+    .timeline{
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+    }
+
+    .timeline-item{
+        position:relative;
+        padding-left:28px;
+    }
+
+    .timeline-item::before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:10px;
+        width:12px;
+        height:12px;
+        border-radius:50%;
+        background:#78e6ff;
+        box-shadow:0 0 20px #78e6ff;
+    }
+
+    .timeline-item h3{
+        margin-bottom:10px;
+    }
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:14px;
+    }
+
+    .skill{
+        padding:12px 18px;
+        border-radius:999px;
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,255,255,0.08);
+    }
+
+    footer{
+        text-align:center;
+        padding:40px 20px 60px;
+        color:#8fa4c8;
+    }
+
+    .typing{
+        color:#7ce8ff;
+        font-weight:600;
+    }
+
+    @media(max-width:900px){
+        .hero{
+            grid-template-columns:1fr;
+        }
+
+        .orb{
+            width:220px;
+            height:220px;
+        }
+
+        header{
+            padding-top:80px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="grid"></div>
+
+<header>
+    <div class="container hero">
+        <div>
+            <div class="tag">AI PRODUCT THINKER • EXPERIENCE DESIGN • FUTURE SYSTEMS</div>
+            <h1>Shiva<br>Kumar</h1>
+
+            <p class="subtitle">
+                Product-oriented AI explorer focused on building intelligent user experiences,
+                futuristic digital products, and meaningful customer journeys.
+                Passionate about RAG systems, AI-powered product design, route intelligence,
+                and turning user pain points into scalable experiences.
+            </p>
+
+            <div class="cta">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Connect</a>
+            </div>
+        </div>
+
+        <div class="orb"></div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="glass">
+            <p style="line-height:1.9;color:#c4d3ea;font-size:1.05rem;">
+                I combine product thinking, AI experimentation, and user empathy to imagine
+                products that feel ahead of their time. My interests span intelligent routing,
+                AI notifications, recommendation systems, retrieval augmented generation (RAG),
+                and building digital experiences around real-world behavior.
+                <br><br>
+                I enjoy transforming abstract ideas into structured PRDs, system prompts,
+                user flows, and future-ready prototypes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Concepts & Projects</h2>
+
+        <div class="cards">
+            <div class="glass card">
+                <h3>Time-Aware Food Route Planner</h3>
+                <p>
+                    Designed an AI-powered travel companion that recommends where and when
+                    to stop during highway journeys for the freshest iconic food experiences.
+                </p>
+            </div>
+
+            <div class="glass card">
+                <h3>YouTube Notification Intelligence</h3>
+                <p>
+                    Reimagined subscription management with bulk unsubscribe,
+                    inactive channel detection, and AI-based notification prioritization.
+                </p>
+            </div>
+
+            <div class="glass card">
+                <h3>RAG Exploration & AI Systems</h3>
+                <p>
+                    Explored retrieval-augmented generation concepts focused on converting
+                    relevant knowledge chunks into meaningful user experiences.
+                </p>
+            </div>
+
+            <div class="glass card">
+                <h3>AI Product Documentation</h3>
+                <p>
+                    Created structured PRDs, JTBD frameworks, and system prompts
+                    for AI-first product ideas and user-centric experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Core Skills</h2>
+
+        <div class="skills">
+            <div class="skill">AI Product Thinking</div>
+            <div class="skill">Prompt Engineering</div>
+            <div class="skill">PRD Writing</div>
+            <div class="skill">User Journey Design</div>
+            <div class="skill">RAG Concepts</div>
+            <div class="skill">Product Strategy</div>
+            <div class="skill">UX Ideation</div>
+            <div class="skill">JTBD Frameworks</div>
+            <div class="skill">Creative Systems Design</div>
+            <div class="skill">Feature Prioritization</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Mindset Timeline</h2>
+
+        <div class="timeline">
+            <div class="glass timeline-item">
+                <h3>AI Product Exploration Era</h3>
+                <p>
+                    Transitioned from idea exploration into structured AI-first product thinking,
+                    focusing on user pain points and scalable intelligence.
+                </p>
+            </div>
+
+            <div class="glass timeline-item">
+                <h3>Experience-Led Innovation</h3>
+                <p>
+                    Started building concepts around emotional timing,
+                    contextual recommendations, and behavior-aware systems.
+                </p>
+            </div>
+
+            <div class="glass timeline-item">
+                <h3>Future Vision</h3>
+                <p>
+                    Aim to create products where AI quietly understands intent,
+                    reduces friction, and delivers deeply personalized experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Live Status</h2>
+
+        <div class="glass">
+            <p style="font-size:1.1rem;line-height:1.9;">
+                Current Focus:
+                <span class="typing" id="typing"></span>
+            </p>
+
+            <br>
+
+            <p style="color:#b8c6dd;line-height:1.8;">
+                Open to collaborating on AI products, futuristic interfaces,
+                intelligent recommendation systems, and user-centered innovation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Designed as a futuristic interactive resume • Built with HTML, CSS & JavaScript
+</footer>
+
+<script>
+const phrases = [
+    "Designing AI-first product experiences",
+    "Exploring RAG-powered systems",
+    "Building user-centric AI workflows",
+    "Creating futuristic travel intelligence",
+    "Turning ideas into product narratives"
+];
+
+let phraseIndex = 0;
+let letterIndex = 0;
+const typingElement = document.getElementById("typing");
+
+function typeEffect(){
+    if(letterIndex < phrases[phraseIndex].length){
+        typingElement.textContent += phrases[phraseIndex].charAt(letterIndex);
+        letterIndex++;
+        setTimeout(typeEffect, 60);
+    } else {
+        setTimeout(eraseEffect, 1500);
+    }
+}
+
+function eraseEffect(){
+    if(letterIndex > 0){
+        typingElement.textContent = phrases[phraseIndex].substring(0, letterIndex - 1);
+        letterIndex--;
+        setTimeout(eraseEffect, 30);
+    } else {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setTimeout(typeEffect, 300);
+    }
+}
+
+typeEffect();
+</script>
+
+</body>
+</html>
